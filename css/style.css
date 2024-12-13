@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.logo-nav{
+    width: 70px;
+    height: auto;
+    margin-left: 80px;
+}
+.footer-bg{
+    background-color: #00ACFF;
+    position: static;
+    margin-top: 10%;
+}
+.nav-link-azul{
+    font-size: 18px !important;
+}
+.nav-link-azul:hover{
+    font-weight: 600 !important;
+    color: #00ACFF !important;
+}
+.nav-link-azul-active{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #00ACFF !important;
+}
+.background-image{
+    width: 100%;height: 100vh;
+}
+.btn-inicio-presupuesto{
+    border-radius: 3px;
+    padding: 1rem 8rem;
+    left: 15%;top: 70vh;
+    border: 1px solid #000;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+}
+.btn-inicio-presupuesto:hover{
+    background-color: #00ACFF;
+    border: 1px solid #00ACFF;
+    transition: all 300ms;
+    color: #fff;
+    cursor: pointer;
+}
+.texto-fondo{
+    top: 30%;
+    left: 10%;
+}
+.texto-fondo h1{
+    font-size: 3.5em;
+}
+.texto-fondo p{
+    font-size: 1.2em;
+}
+.bg-inicio{
+    height: 100vh;
+}
+.bg-inicio img{
+    width: 60%;
+    position: absolute;
+    right: 0;
+}
+.circulo{
+    top: 90vh;height: 50px;width: 50px;background-color: #ffffff;border-radius: 50%;display: inline-block;animation: float 3s ease-in-out infinite;
+}
+.circulo:hover{
+    cursor: pointer;
+}
+.circulo svg{
+    margin-top: 0.75rem;
+}
+.bg-presupuesto{
+    border-radius: 10px;
+    margin-top: 15%;
+    border: 1px solid #dadada;
+}
+.columna-data{
+    border-right: 1px solid #dadada;
+}
+.bg-presupuesto h2{
+    color: #00ACFF;
+}
+.bg-presupuesto label{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.bg-presupuesto hr{
+    display: none;
+}
+input{
+    box-shadow: none !important;
+}
+select{
+    box-shadow: none !important;
+}
+.columna-presupuesto .form-check-input{
+    padding: 8px !important;
+    margin-top: 1% !important;
+    margin-right: 3% !important;
+}
+.form-check-input:hover{
+    cursor: pointer !important;
+}
+.mapa-container{
+    margin-top: 8%;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+.gallery{
+    margin-top: 8%;
+    color: #00ACFF;
+    margin-bottom: 15%;
+}
+.gallery img{
+    border: 1px solid #dadada;
+    width: 350px;
+    height: 250px;
+    margin-top: 5%;
+}
+.gallery img:hover{
+    border: 5px solid #dadada;
+    border-radius:5px ;
+}
+.section-container{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.sec-4-col{
+    border-radius: 5px;
+    border: 1px solid #dadada;
+}
+.sec-2-col{
+    border-radius: 5px;
+    border: 1px solid #dadada;
+}
+.team-circle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: #727272;
+    position: relative;
+}
+.img-mac{
+    width: 1200px !important;
+    height: auto !important;
+    position: absolute;
+    top: 15%;
+}
+.background-image-mob{
+    width: 100%;
+    display: none;
+}
+/* ANIMACIONES */  
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+  
+/* MEDIAQUERYS */
+@media(max-width:2200px){
+    .img-mac{
+        width: 900px !important;
+    }
+}
+@media(max-width:1700px){
+    .img-mac{
+        width: 800px !important;
+    }
+}
+@media(max-width:1400px){
+    .bg-inicio img{
+        width: 80%;
+    }
+    .img-mac{
+        top: 25%;
+        width: 600px !important;
+    }
+}
+@media(max-width:1100px){
+    .img-mac{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .logo-nav{
+        margin-left: 0px;
+    }
+    .columna-data{
+        border-right: none;
+    }
+    .bg-presupuesto{
+        margin-top: 25%;
+    }
+    .bg-presupuesto hr{
+        display: block;
+    }
+    .mapa-container{
+        margin-top: 25%;
+    }
+    .btn-inicio-presupuesto{
+        padding: 1rem 3rem;
+        position: absolute;
+        left: 20%;
+    }
+    .bg-inicio{
+        text-align: center !important;
+    }
+    .texto-fondo h1{
+        font-size: 2.5em;
+    }
+    .texto-fondo p{
+        font-size: 1em;
+    }
+    .texto-fondo{
+        top: 30%;
+        left: auto;
+    }
+    .bg-inicio img{
+        width: 100%;
+    }
+    .background-image-mob{
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+    .background-image{
+        display: none;
+    }
+}
